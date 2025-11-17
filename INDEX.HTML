@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Wife Day My Love</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #ffecf2;
+      text-align: center;
+    }
+    .page {
+      display: none;
+      padding: 40px;
+    }
+    .active {
+      display: block;
+    }
+    h1, h2, h3, p {
+      color: #d10063;
+    }
+    button {
+      padding: 12px 26px;
+      border: none;
+      border-radius: 10px;
+      background: #ff4d88;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #d10063;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      margin: auto;
+      width: 80%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    audio {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1 -->
+  <div id="page1" class="page active">
+    <h1>HAPPY WIFEEE DAYYY MY LOVEEVEVE ❤️</h1>
+    <h2>Who are you to me?</h2>
+    <p>Soch samajh ke likhna… jo bhi likhogi, confirm ho jayega 😘</p>
+    <input id="answer" type="text" placeholder="Type your answer here..." style="padding:10px; width:60%; border-radius:8px; border:1px solid #d10063;" />
+    <br>
+    <button onclick="goToPage2()">Confirm</button>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div id="page2" class="page">
+    <h2>Aagay yaha tak? 👀❤️</h2>
+    <h3>Toh chalo… meri biwiii 😭💍</h3>
+    <button onclick="goToPage3()">Next Page</button>
+  </div>
+
+  <!-- PAGE 3 (LETTER) -->
+  <div id="page3" class="page">
+    <div class="card">
+      <h1>My Letter For You ❤️</h1>
+      <h3>My Song For You 🎶</h3>
+      <audio controls>
+        <source src="song.mp3" type="audio/mpeg">
+      </audio>
+      <p style="margin-top:20px; font-size:20px; line-height:1.6;">
+        MERA TEXT YAHAN AA JAYEGA ❤️<br>
+        "I love you so much ajnajnajna… meri gugugu… meri jaan HAPYYYYY WIFEEEEEEE DAYAYYA MY LOVEVE MEIIRI GDIYAYAYA MERI JAAN APKO PATATA HA SACHI MA U R THE BETSTSTST WIFEEEEEEE MY LOVEEVE EMIRI AARURUR IS THE BETSTST WIFEEEEEE EVER EXISTED BETA ILOVEUHSOMCUHAJNAJNAN MERI JAAAN APTA HA APP HONA TOH MA SAMBHALA HUA HO SHONA SACHI MA APKA BABU BACHA HUN APNE MEKO PATI NAI BACHA BANA KE RAKHA HA SHONAN ILOVEUHSOCMUHAJNAJNAJN PATA HA U R MY EVERYTHIGN AJJANJAN SACI MA I'CANT JANA APKE BINA I'M NOTHIGNGN AARURURU TERE BAAJU KINE DHUKDE UNAWA AARU I'VE NO ONE EXCEPT U MY LOVEVE MEI KHSUHI APP HI HO SHONANA MAI JITNA KHUSH APKE SATH HOT AHUN UTNA KISI KE SAATH NAI AAAURURYK GUGU I'VE NO WORDS TO DESCRIBE YOU BETATA KI KYA BATAU AARURU JITNA BOLU UTNANANAN KAMM HA MEIRI ARU KE LIE KYUKI AURRUUR IS INFINITYTY SACHICICIC MAI GUGUGUGU NAA ANT NA SHURU APKE PYAAR KA BABU ILOVEUHSOMCUHANAJN MEIRI VEINSS E MAN KRTA HA TATO APKA KARA DU EMRI HAR PART PE SOCHTA HUN AARURU LIKHA DU JO SABKO VISIBLE HOJAE KI ROHAN BELONSGS TO AARURU AND AARURU BELONGS TO ROHAN ILOVEUHSOMCUANAJN MAHUHA NA GUGUGU EMRIIR JAAN MER BACHHA ILOVEUSOMNCUNAJ MEIRI GUDIYA ILOVEUHSIKCHJANJA MEIREIUEUIIEU MAUHAHAAAA YK WHATATA U RR MEMEME BETATA ILOVEUHSOMCUHANJAJNAJN KYA EXPLAIAN KRURU EBTAA BAS ITNA KI AARURURU USS AARU AND ROHANAN-----AARUHANANA EK HAI? MAI APKI WIFE AP MERA PATI MAI APKA BACHA APAPP MAAA VICEVERSAA HAR SITUATION MAI SHOANAN ILOVEUHSOMCUHAJNAJNAJNAJNAJNJNANJA  HAPPYYYYYYY WIFEYYYYYYYYYEYEYE FAYAYAYAYA MY SWEEEEETHERATAA SHONANANANA ILOVEUSOMCUANA I'M ALWYYS WITH U❤❤🥺🥺💖💖💋😖…"
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function goToPage2() {
+      const ans = document.getElementById("answer").value.trim();
+      if(ans === ""){
+        alert("Answer likho meri jaan ❤️");
+        return;
+      }
+      document.getElementById("page1").classList.remove("active");
+      document.getElementById("page2").classList.add("active");
+    }
+    function goToPage3(){
+      document.getElementById("page2").classList.remove("active");
+      document.getElementById("page3").classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
